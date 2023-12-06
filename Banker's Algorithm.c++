@@ -37,7 +37,7 @@ bool isSafe() {
 	int flag = 1;//当flag=1的时候，它是不安全的
 	int flag1 = 1;//定义是否是已经分配出去的资源
 
-	while (NUM_PROCESSES--) {  //得到一个可以分配的资源后再次便利
+	while (NUM_PROCESSES--) {  //得到一个可以分配的资源后再次遍历
 		flag = 1;
 		
 		for (int i = 0; i < allocation.size(); i++) {//遍历allocation need数组的列
